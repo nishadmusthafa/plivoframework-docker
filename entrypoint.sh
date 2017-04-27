@@ -1,7 +1,7 @@
 #!/bin/bash
 
-FS_INBOUND_ADDRESS="$(getent hosts freeswitch | awk '{print $1}'):8021"
-REDIS_HOST="$(getent hosts redis | awk '{print $1}')"
+FS_INBOUND_ADDRESS="127.0.0.1:8021"
+REDIS_HOST="127.0.0.1:6379"
 
 HTTP_ADDRESS="0.0.0.0:8088"
 HTTP_ADDRESS_CACHE="0.0.0.0:8089"
